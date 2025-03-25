@@ -1,7 +1,10 @@
 # app.py
 from flask import Flask, render_template, jsonify
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)  # 啟用 CORS
+
 
 @app.route('/')
 def index():
