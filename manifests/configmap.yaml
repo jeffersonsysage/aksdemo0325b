@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: aks-app02-config
+  namespace: sample-app-namespace-1742888334253
+  labels:
+    app.kubernetes.io/name: aks-app02
+    kubernetes.azure.com/generator: devhub
+data:
